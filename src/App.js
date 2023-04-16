@@ -91,15 +91,14 @@ class App extends Component {
       })
       .catch(err => console.log(err));
   }
-
-  onRouteChange = (route) => {
-    if (route === 'signout') {
-      this.setState(initialState)
-    } else if (route === 'home') {
-      this.setState({isSignedIn: true})
+  onRouteChange=(route)=>{
+    if(route === 'signout'){
+      this.setState({signedin:false})
+    }else if(route === 'home'){
+      this.setState({signedin:true})
     }
-    this.setState({route: route});
-  }
+    this.setState({route:route});
+  } 
 
   render() {
     const { isSignedIn, imageUrl, route, box } = this.state;
