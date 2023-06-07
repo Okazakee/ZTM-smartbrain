@@ -106,9 +106,9 @@ class App extends Component {
       <div className="App">
         <ParticlesBg type="cobweb" bg={true} />
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
+        <Logo />
         { route === 'home'
           ? <div>
-              <Logo />
               <Rank
                 name={this.state.user.name}
                 entries={this.state.user.entries}
