@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/Okazakee/ZTM-smartbrain">
+    <img src="assets/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-## Available Scripts
+  <h3 align="center">Smartbrain</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    This Magic Site detects faces in your pictures!
+    <br />
+    <a href="https://smartbrain-okazakee.netlify.app/">View Live Demo</a>
+  </p>
+</div>
 
-### `npm start`
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Project screenshot][project-screenshot]
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This is the last ReactJS website project committed from the [ZTM Web Development Course](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/).
 
-### `npm test`
+### Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+These are the major frameworks/APIs used in this project.
 
-### `npm run build`
+[![ReactJS][ReactJS]][ReactJS-url]
+[![clarifai][clarifai]][clarifai-url]
+[![NodeJS][NodeJS]][NodeJS-url]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How it works
+This WebApp was the first attempt on making a fullstack project, it is built with ReactJS in the frontend, NodeJS as backend and Postgress as DB.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+It supports registration and the user can detect faces in provided images using the Clarifai REST API, a "Rank" value is increased for each image scanned by the user.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- GETTING STARTED -->
+## Getting Started - FRONTEND/BACKEND
 
-### `npm run eject`
+* Clone the repo:
+```bash
+git clone https://github.com/Okazakee/ZTM-smartbrain.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Install dependencies:
+```bash
+npm -i
+# or
+yarn
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Run the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run start
+# or
+yarn start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* For Backend, in another terminal run:
+```bash
+git checkout backend
+```
 
-## Learn More
+* Install dependencies:
+```bash
+npm -i
+# or
+yarn
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Run the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run start
+# or
+yarn start
+```
 
-### Code Splitting
+## Getting Started - DATABASE
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Setup your Postgress SQL Database according to the course specifications.
 
-### Analyzing the Bundle Size
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[project-screenshot]: assets/screenshot.png
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[ReactJS]: https://img.shields.io/badge/ReactJS-000000?style=for-the-badge&logo=react&logoColor=white
+[ReactJS-url]: https://react.dev/
 
-### Making a Progressive Web App
+[clarifai]: https://img.shields.io/badge/clarifai-58bfdd?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjEuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDE1OCAxMzQuNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTU4IDEzNC40OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzAwNEVFQjt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE4LjMsODUuNUM4LjIsODUuNSwwLDc3LjQsMCw2Ny4zUzguMiw0OSwxOC4zLDQ5czE4LjIsOC4yLDE4LjIsMTguMlMyOC40LDg1LjUsMTguMyw4NS41eiBNMTEyLjcsMC4zCgkJQzk5LjIsMC4zLDk4LjYsMTEuNyw3OCwxMS43Yy0yMC44LDAtMjIuNS0xMS40LTM0LjgtMTEuNGMtMTAuMSwwLTE4LjIsOC4yLTE4LjIsMTguMnM4LjIsMTguMiwxOC4yLDE4LjIKCQljMTMuNiwwLDE0LjItMTEuNCwzNC44LTExLjRjMjAuOCwwLDIyLjUsMTEuNCwzNC44LDExLjRjMTAuMSwwLDE4LjItOC4yLDE4LjItMTguMlMxMjIuOCwwLjMsMTEyLjcsMC4zeiBNMTEyLjcsOTcuOAoJCWMtMTMuNiwwLTE0LjIsMTEuNC0zNC44LDExLjRjLTIwLjgsMC0yMi41LTExLjQtMzQuOC0xMS40Yy0xMC4xLDAtMTguMiw4LjItMTguMiwxOC4yczguMiwxOC4yLDE4LjIsMTguMgoJCWMxMy42LDAsMTQuMi0xMS40LDM0LjgtMTEuNGMyMC44LDAsMjIuNSwxMS40LDM0LjgsMTEuNGMxMC4xLDAsMTguMi04LjIsMTguMi0xOC4yUzEyMi44LDk3LjgsMTEyLjcsOTcuOHogTTEzOS43LDQ5LjEKCQljLTEzLjcsMC0xMy4yLDEyLTMwLjQsMTJ2MEM5My40LDYxLDkzLjIsNDkuMSw3OCw0OS4xYy05LjUsMC0xNy4zLDguNy0xNy4zLDE4LjJjMCw5LjUsNy45LDE4LjIsMTguMiwxOC4yYzEzLjcsMCwxMy4yLTEyLDMwLjQtMTIKCQl2MGMxNS45LDAsMTYuMSwxMS45LDMxLjQsMTEuOWM5LjUsMCwxNy4zLTguNywxNy4zLTE4LjJDMTU4LDU3LjgsMTUwLjEsNDkuMSwxMzkuNyw0OS4xeiIvPgo8L2c+Cjwvc3ZnPgo=
+[clarifai-url]: https://clarifai.com/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[NodeJS]: https://img.shields.io/badge/NodeJS-54a244?style=for-the-badge&logo=nodedotjs&logoColor=white
+[NodeJS-url]: https://nodejs.org/
